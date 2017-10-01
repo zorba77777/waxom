@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:200,300,400,600,700,800|Roboto');
+
+/* START reset browser styles */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+}
+
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FINISH reset browser styles */
+
+/* -------------------- НАЧАЛО общих стилей для всего документа --------------------- */
+
+html, body {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.buttonBrown {
+    padding: 1.5% 0 1.1% 0;
+    width: 14%;
+    background-color: #998675;
+    border: none;
+    border-radius: 5%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80%;
+    font-weight: 600;
+    box-shadow: 0 0.2em 0.2em #736357;
+    cursor: pointer;
+}
+
+.buttonBrown:hover {
+    background-color: #ba7e50;
+}
+
+/* -------------------- КОНЕЦ общих стилей для всего документа --------------------- */
+
+/* -------------------- НАЧАЛО стилей для header --------------------- */
+
+header {
+    background-image: url(images/headerBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+}
+
+.headerFirstRow {
+    padding-top: 2%;
+    display: flex;
+}
+
+.logo {
+    width: 15%;
+    background: url(images/mainLogo.png) no-repeat;
+    padding-right: 17%;
+    cursor: pointer;
+}
+
+nav {
+    margin-top: 1.5%;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    padding-right: 5%;
+}
+
+nav ul li:nth-child(9), nav ul li:nth-child(10) {
+    padding-right: 0;
+}
+
+nav ul li:nth-child(10) {
+    margin-left: 4%;
+}
+
+nav ul li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80%;
+}
+
+nav ul li a:hover {
+    color: #c7b299;
+}
+
+.search, .bag {
+    margin-top: -0.5%;
+    cursor: pointer;
+}
+
+.sliderPage {
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+}
+
+.sliderPage h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 210%;
+    padding: 20% 0 2% 0;
+}
+
+.sliderPage h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 310%;
+}
+
+.sliderPage h3 {
+    padding: 2% 0 4% 0;
+    line-height: 150%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+}
+
+.sliderPage button {
+    margin-bottom: 15%;
+}
+
+/* - Начало подгонки шаблона из внешнего источника - */
+
+.slick-prev, .slick-next {
+    width: 3%;
+    height: 8%;
+    background-image: url(images/leftArrow.png);
+    z-index: 1001;
+    top: 40%;
+}
+
+.slick-next {
+    top: 36%;
+}
+
+.slick-next {
+    transform: rotate(180deg);
+}
+
+.slick-prev:before, .slick-next:before {
+    content: "";
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background-image: url(images/leftArrow.png);
+}
+
+.slick-dots {
+    margin-bottom: 3%;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #ffffff;
+    content: "\2022";
+}
+
+.slick-dots li.slick-active button:before {
+    color: transparent;
+    border: 0.1em solid #fff;
+    border-radius: 50%;
+}
+
+/* - Конец подгонки шаблона из внешнего источника - */
+
+/* -------------------- КОНЕЦ стилей для header --------------------- */
+
+/* -------------------- НАЧАЛО стилей для первого ряда главного блока --------------------- */
+
+.mainFirstRow {
+    display: flex;
+    padding: 4%;
+    justify-content: space-between;
+}
+
+.webAppDesign {
+    margin-left: 16%;
+}
+
+.marketing {
+    margin-right: 16%;
+}
+
+.webAppDesign, .development, .customisation, .marketing {
+    text-align: center;
+    width: 15%;
+}
+
+.webAppDesign:after, .development:after, .customisation:after, .marketing:after {
+    content: "\2014\2013";
+    color: #f1eee9;
+    font-weight: 900;
+    font-size: 300%;
+}
+
+.webAppDesign:hover:after, .development:hover:after, .customisation:hover:after, .marketing:hover:after {
+    content: "\2014\2013";
+    color: #c7b299;
+    font-weight: 900;
+    font-size: 300%;
+}
+
+.mainFirstRow a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 140%;
+    font-weight: 600;
+    display: block;
+    padding-top: 18.3%;
+    color: #555;
+    line-height: 350%;
+}
+
+.mainFirstRow p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+    line-height: 150%;
+    color: #8c8c8c;
+}
+
+.webAppDesign a {
+    background: url(images/pencilInactive.png) no-repeat;
+    background-position-x: 50%;
+}
+
+.webAppDesign a:hover {
+    background: url(images/pencilActive.png) no-repeat;
+    background-position-x: 50%;
+    color: #c7b299;
+}
+
+.development a {
+    background: url(images/booksStackInactive.png) no-repeat;
+    background-position-x: 50%;
+}
+
+.development a:hover {
+    background: url(images/booksStackActive.png) no-repeat;
+    background-position-x: 50%;
+    color: #c7b299;
+}
+
+.customisation a {
+    background: url(images/gearwheelInactive.png) no-repeat;
+    background-position-x: 50%;
+}
+
+.customisation a:hover {
+    background: url(images/gearwheelActive.png) no-repeat;
+    background-position-x: 50%;
+    color: #c7b299;
+}
+
+.marketing a {
+    background: url(images/briefcaseInactive.png) no-repeat;
+    background-position-x: 50%;
+}
+
+.marketing a:hover {
+    background: url(images/briefcaseActive.png) no-repeat;
+    background-position-x: 50%;
+    color: #c7b299;
+}
+
+/* -------------------- КОНЕЦ стилей для первого ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для второго ряда главного блока --------------------- */
+
+.mainSecondRow {
+    background-color: #fbfaf8;
+    text-align: center;
+}
+
+.mainSecondRow img {
+    display: block;
+}
+
+.introduction h2, .mainThirdRow h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+    color: #555;
+    font-weight: 600;
+    padding: 6.5% 0 2.5% 0;
+}
+
+.introduction p, .mainThirdRow p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    color: #8c8c8c;
+    line-height: 150%;
+    padding-bottom: 3%;
+}
+
+.gradient {
+    background: linear-gradient(to right, #211b19, #4e3427);
+    text-align: left;
+}
+
+.gradientWrapper {
+    display: flex;
+}
+
+.textGradient {
+    margin: 0 38% 0 2%;
+    padding-bottom: 5%;
+}
+
+.textGradient h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 180%;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 8%;
+}
+
+.textGradient h2 span {
+    color: #c7b299;
+}
+
+.textGradient p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    color: #615855;
+    padding-top: 2%;
+}
+
+.gradientWrapper button {
+    margin: 5% 0;
+}
+
+/* -------------------- КОНЕЦ стилей для второго ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для третьего ряда главного блока --------------------- */
+
+.mainThirdRow {
+    text-align: center;
+}
+
+.projectMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.projectMenu li {
+    margin-right: 1%;
+    padding: 0.5% 1.5%;
+    display: block;
+    border: 0.1em solid #ebebeb;
+    border-radius: 0.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+    color: #615855;
+    cursor: pointer;
+}
+
+.projectMenu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projectMenu li:hover {
+    background-color: #998675;
+    color: #fff;
+}
+
+.projectPicture {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.projectPicture img[src="images/link.png"], .projectPicture img[src="images/magnifier.png"] {
+    margin-top: 25%;
+    margin-bottom: 16%;
+    visibility: hidden;
+}
+
+.projectPicture figure {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    width: 29.8%;
+}
+
+.projectPicture .smartphone {
+    background: url("images/smartphone.jpg") no-repeat;
+}
+
+.projectPicture .stormRock {
+    background: url("images/stormRock.jpg") no-repeat;
+}
+
+.projectPicture .latinBook {
+    background: url("images/latinBook.jpg") no-repeat;
+}
+
+.projectPicture .waterfall {
+    background: url("images/waterfall.jpg") no-repeat;
+}
+
+.projectPicture .booklet {
+    background: url("images/booklet.jpg") no-repeat;
+}
+
+.projectPicture .stillRock {
+    background: url("images/stillRock.jpg") no-repeat;
+}
+
+.projectPicture #triangle1,
+.projectPicture #triangle2,
+.projectPicture #triangle3,
+.projectPicture #triangle4,
+.projectPicture #triangle5,
+.projectPicture #triangle6 {
+    font-size: 350%;
+    display: block;
+    margin-bottom: -11.5%;
+    text-align: left;
+    color: #fbfaf8;
+}
+
+.projectPicture figure:hover #triangle1,
+.projectPicture figure:hover #triangle2,
+.projectPicture figure:hover #triangle3,
+.projectPicture figure:hover #triangle4,
+.projectPicture figure:hover #triangle5,
+.projectPicture figure:hover #triangle6 {
+    color: #362f2d;
+}
+
+.projectPicture figcaption {
+    background-color: #fbfaf8;
+    text-align: left;
+}
+
+.projectPicture figure:hover figcaption {
+    background-color: #362f2d;
+}
+
+.projectPicture figure:hover img[src="images/link.png"],
+.projectPicture figure:hover img[src="images/magnifier.png"] {
+    visibility: visible;
+}
+
+.projectPicture figcaption h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+    font-weight: 400;
+    color: #c7b299;
+    padding: 6% 0 2% 8%;
+}
+
+.projectPicture figure:hover figcaption h3 {
+    color: #fff;
+}
+
+.projectPicture figcaption p {
+    padding-left: 8%;
+    font-size: 90%;
+    font-weight: 400;
+    padding-bottom: 5%;
+}
+
+.projectPicture figure:hover figcaption p {
+    color: #c7b299;
+}
+
+.mainThirdRow button {
+    margin-bottom: 7%;
+}
+
+/* -------------------- КОНЕЦ стилей для третьего ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для четвертого ряда главного блока --------------------- */
+
+.video {
+    background-image: url(images/videoBg.jpg);
+    text-align: center;
+}
+
+.videoText {
+    color: #fff;
+    padding-bottom: 12.6%;
+}
+
+.video img {
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.videoText h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+    font-weight: 500;
+    padding: 1% 0;
+}
+
+.videoText p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    line-height: 170%;
+    font-weight: 100;
+    padding-bottom: 2.5%;
+}
+
+.videoText span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+    color: #c7b299;
+}
+
+/* -------------------- КОНЕЦ стилей для четвертого ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для пятого ряда главного блока --------------------- */
+
+.mobile {
+    background-color: #fbfaf8;
+    margin-bottom: -0.25%;
+}
+
+.mobile .container {
+    display: flex;
+}
+
+.phoneImg {
+    width: 35%;
+    margin-top: 6%;
+}
+
+.textMobile {
+    width: 60%;
+}
+
+.textMobile h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+    color: #555;
+    font-weight: 600;
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+.textMobile p, .textMobile ul {
+    font-family: 'Montserrat', sans-serif;
+    color: #8c8c8c;
+    font-size: 100%;
+    line-height: 200%;
+}
+
+.textMobile p {
+    margin-bottom: 45px;
+}
+
+.textMobile ul li {
+    background-image: url(images/listArrow.png);
+    background-repeat: no-repeat;
+    background-position: 0 30%;
+    padding-left: 7%;
+}
+
+.textMobile ul {
+    margin-left: 7%;
+}
+
+/* -------------------- КОНЕЦ стилей для пятого ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для шестого ряда главного блока --------------------- */
+
+.anotherGradient {
+    background: linear-gradient(to right, #211b19, #4e3427);
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+.numbers span {
+    font-size: 300%;
+    color: #fff;
+}
+
+.numbers p {
+    color: #c7b299;
+    text-transform: uppercase;
+    margin-top: 25%;
+    margin-bottom: 5%;
+    text-align: center;
+    display: block;
+    line-height: 1.5;
+}
+
+.w3587 {
+    background-image: url(images/3587.png);
+}
+
+.w207 {
+    background-image: url(images/207.png);
+}
+
+.w2500 {
+    background-image: url(images/2500.png);
+}
+
+.w873 {
+    background-image: url(images/873.png);
+}
+
+.w900 {
+    background-image: url(images/900.png);
+}
+
+.w3587, .w207, .w2500, .w873, .w900 {
+    padding-top: 2%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.w873 {
+    padding-top: 3%;
+}
+
+.w3587:after, .w207:after, .w2500:after, .w873:after, .w900:after {
+    content: "\2014\2013";
+    color: #fff;
+    font-weight: 900;
+    font-size: 300%;
+}
+
+/* -------------------- КОНЕЦ стилей для шестого ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для седьмого ряда главного блока --------------------- */
+
+.recent {
+    text-align: center;
+}
+
+.recent h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+    color: #555;
+    font-weight: 600;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.recent p {
+    font-family: 'Montserrat', sans-serif;
+    color: #8c8c8c;
+    font-size: 100%;
+    line-height: 2;
+    margin-bottom: 3%;
+}
+
+.recent figure {
+    cursor: pointer;
+    background-color: #fff;
+    text-align: left;
+}
+
+.recent figure h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+    font-weight: 400;
+    color: #555;
+    padding: 6% 0 2% 8%;
+}
+
+.recent figure p {
+    padding-left: 8%;
+    line-height: 1.5;
+    font-weight: 200;
+    margin-bottom: 5%;
+    font-size: 90%;
+}
+
+.recent figure img {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 33%;
+}
+
+.recent figcaption {
+    width: 89.4%;
+}
+
+.USAFlag {
+    background: url("images/USAFlag.jpg") no-repeat;
+}
+
+.legs {
+    background: url("images/legs.jpg") no-repeat;
+}
+
+.laptop {
+    background: url("images/laptop.jpg") no-repeat;
+}
+
+.ship {
+    background: url("images/ship.jpg") no-repeat;
+}
+
+.truck {
+    background: url("images/truck.jpg") no-repeat;
+}
+
+.recent figure:hover figcaption {
+    background-color: #362f2d;
+}
+
+.recent figure:hover h3 {
+    color: #c7b299;
+}
+
+.recent figure:hover p {
+    color: #fff;
+}
+
+.readMore {
+    background-color: transparent;
+    border: none;
+    margin-left: 7%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+    margin-bottom: 8%;
+    cursor: pointer;
+}
+
+.readMore a {
+    color: #c7b299;
+}
+
+/* - Начало подгонки шаблона из внешнего источника - */
+
+.recent .slick-prev {
+    background: url(images/smallLeftArrow.png) no-repeat;
+    left: 46%;
+    top: 115%;
+}
+
+.recent .slick-next {
+    background: url(images/smallLeftArrow.png) no-repeat;
+    left: 48.5%;
+    top: 108.5%;
+}
+
+.recent .slick-prev:hover,
+.recent .slick-prev:focus {
+    background-image: url(images/smallLeftArrowActive.png);
+}
+
+.recent .slick-next:hover,
+.recent .slick-next:focus {
+    background-image: url(images/smallLeftArrowActive.png);
+}
+
+.recent .slick-dots {
+    left: -35%;
+    bottom: 40%;
+}
+
+/* - Конец подгонки шаблона из внешнего источника - */
+
+/* -------------------- КОНЕЦ стилей для седьмого ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для восьмого ряда главного блока --------------------- */
+
+.advertisement {
+    margin-top: 7%;
+    background-image: url(images/advBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.advertisement img {
+
+    cursor: pointer;
+}
+
+.advertisement img:first-child {
+    margin-left: 18%;
+}
+
+.advertisement img:last-child {
+    margin-right: 18%;
+}
+
+/* -------------------- КОНЕЦ стилей для восьмого ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для девятого ряда главного блока --------------------- */
+
+.bottom {
+    background-color: #191919;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+.bottom p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+    color: #555;
+    line-height: 1.5;
+}
+
+.bottom h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+    color: #fff;
+    margin: 0 0 6% 0;
+    font-weight: 600;
+}
+
+.bottom div:first-child {
+    margin-top: -1%;
+    margin-left:17%;
+}
+
+.bottom div:last-child {
+    margin-right: 17%;
+}
+
+.logoTextWrapper {
+    width: 23%;
+}
+
+.logoTextWrapper img {
+    margin-bottom: 5%;
+}
+
+.logoTextWrapper:hover p {
+    color: #c7b299;
+}
+
+.logoTextWrapper button {
+    color: #d1d1d1;
+    margin-top: 7%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.recentPost {
+    width: 23%;
+}
+
+.recentPost .data {
+    font-size: 70%;
+    color: #363636;
+}
+
+.recentPost .div1:hover p {
+    color: #c7b299;
+}
+
+.recentPost .div1:hover .data {
+    color: #fff;
+}
+
+.twitter {
+    width: 25%;
+}
+
+.twitter .data {
+    font-size: 70%;
+    color: #363636;
+}
+
+.twitter .blue {
+    color: #01b7e9;
+    cursor: pointer;
+}
+
+.twitter .silver {
+    color: #959595;
+}
+
+.dribble h3 {
+    margin-left: 5%;
+}
+
+.dribble img {
+    margin-bottom: 3%;
+}
+
+.dribble .pictureWrapper {
+    margin-left: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* -------------------- КОНЕЦ стилей для девятого ряда главного блока --------------------- */
+
+/* -------------------- НАЧАЛО стилей для footer --------------------- */
+
+.footWrap {
+    background-color: #111;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.footWrap .silver {
+    color: #959595;
+}
+
+.footText {
+    display: flex;
+    align-items: center;
+}
+
+.footText li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80%;
+    padding: 0 2% 0 2%;
+}
+
+.footTextLeft, .footTextRight {
+    display: flex;
+    color: #555;
+    flex: 1;
+}
+
+.footTextLeft a {
+    color: #555;
+}
+
+.footTextLeft a:hover {
+    color: #c7b299;
+}
+
+.footTextRight {
+    flex: 1;
+}
+
+.footTextRight {
+    justify-content: flex-end;
+}
+
+/* -------------------- КОНЕЦ стилей для footer --------------------- */
